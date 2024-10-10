@@ -1,39 +1,3 @@
-// import React from 'react'
-
-// const Form_MultipleFileds = () => {
-//   return (
-//     <div className='flex justify-center items-center'>
-//       <div className='w-[500px] h-[450px] bg-yellow-200 '>
-//         <h1 className='font-bold text-2xl pt-3'>This is Form Component</h1><br />
-
-//         <label>Enter Your FirstName : </label>
-//         <input /><br /><br />
-        
-//         <label>Enter Your LastName : </label>
-//         <input /><br /><br />
-        
-//         <label>Enter Your Email : </label>
-//         <input /><br /><br />
-
-//         <label>Enter Your Password : </label>
-//         <input /><br /><br />
-
-//         <label>Enter Your age: </label>
-//         <input /><br /><br />
-
-//         <label>Enter Your MobileNo : </label>
-//         <input /><br /><br />
-
-//         <button className='p-4 bg-blue-600 text-white rounded-3xl' type='sumbit'>Submit</button>
-
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Form_MultipleFileds
-
-
 import React, { useState } from 'react';
 
 const Form_MultipleFileds = () => {
@@ -46,6 +10,8 @@ const Form_MultipleFileds = () => {
     mobileNo: '',
   });
 
+  const [submittedData, setSubmittedData] = useState(null);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -56,13 +22,21 @@ const Form_MultipleFileds = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    setSubmittedData(formData); // Set submitted data to state
+    // Optionally reset the form
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      password: '',
+      age: '',
+      mobileNo: '',
+    });
   };
 
   return (
     <div className='flex justify-center items-center'>
-      <div className='w-[500px] h-[450px] bg-yellow-200'>
+      <div className='w-[500px] h-[650px] bg-yellow-200'>
         <h1 className='font-bold text-2xl pt-3'>This is Form Component</h1>
         <form onSubmit={handleSubmit}>
           <label>Enter Your FirstName: </label>
@@ -115,6 +89,18 @@ const Form_MultipleFileds = () => {
 
           <button className='p-4 bg-blue-600 text-white rounded-3xl' type='submit'>Submit</button>
         </form>
+
+        {/* Display submitted data if available */}
+        {submittedData && (
+          <div className='mt-5'>
+            <h2 className='font-bold'>Submitted Data:</h2>
+            <p>First Name: {submittedData.firstName}</p>
+            <p>Last Name: {submittedData.lastName}</p>
+            <p>Email: {submittedData.email}</p>
+            <p>Age: {submittedData.age}</p>
+            <p>Mobile No: {submittedData.mobileNo}</p>
+          </div>
+        )}
       </div>
     </div>
   );
