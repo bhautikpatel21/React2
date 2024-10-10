@@ -7,6 +7,7 @@ import AddressForm from './Day1/Multiple_state_variable'
 import List_rendering from './Day1/List_rendering'
 import Toggle from './Day1/Toggle'
 import Counter from './Day1/Couter'
+import Form_MultipleFileds from './Day1/Form_MultipleFileds'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,8 @@ function App() {
       {/* <AddressForm/> */}
       {/* <List_rendering/> */}
       {/* <Toggle/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <Form_MultipleFileds/>
     </>
   ) 
 }
