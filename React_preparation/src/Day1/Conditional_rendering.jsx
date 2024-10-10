@@ -44,7 +44,7 @@ const Conditional_rendering= () => {
 
     else {
         serVisible("Statement 1");
-    }
+    } 
   }
 
   return (

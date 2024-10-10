@@ -8,7 +8,7 @@ const Form = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     alert(`Submitted Value: ${inputValue}`);
     setInputValue(''); // Clear the input after submission
   };
