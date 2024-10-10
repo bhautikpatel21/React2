@@ -8,6 +8,7 @@ import List_rendering from './Day1/List_rendering'
 import Toggle from './Day1/Toggle'
 import Counter from './Day1/Couter'
 import Form_MultipleFileds from './Day1/Form_MultipleFileds'
+import StateArray from './Day1/StateWithArrays'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +22,8 @@ function App() {
       {/* <List_rendering/> */}
       {/* <Toggle/> */}
       {/* <Counter/> */}
-      <Form_MultipleFileds/>
+      {/* <Form_MultipleFileds/> */}
+      <StateArray/>
     </>
   ) 
 }
