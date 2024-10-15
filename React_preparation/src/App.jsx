@@ -12,11 +12,14 @@ import Logical from './Day1/Conditional/Logical'
 import Switch from './Day1/Conditional/Switch'
 import Ternary from './Day1/Conditional/Teanary'
 import FormMultipleFileds from './Day1/Form_MultipleFileds'
+import Index from './Day2'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      {/* ||    ----  Day - 1  ----     || */}
       {/* <Toggle/> */}
       {/* <StateArray/> */}
       {/* <Nesting_react/> */}
@@ -29,6 +32,10 @@ function App() {
       {/* <Logical/> */}
       {/* <Switch/> */}
       {/* <Ternary/> */}
+
+
+      {/* ||    ----  Day - 2  ----     || */}
+      <Index/>
     </>
   ) 
 }
