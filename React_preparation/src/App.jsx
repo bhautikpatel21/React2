@@ -13,6 +13,7 @@ import Switch from './Day1/Conditional/Switch'
 import Ternary from './Day1/Conditional/Teanary'
 import FormMultipleFileds from './Day1/Form_MultipleFileds'
 import Index from './Day2'
+import MainCom from './Day2/MainCom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,7 +36,8 @@ function App() {
 
 
       {/* ||    ----  Day - 2  ----     || */}
-      <Index/>
+      {/* <Index/> */}
+      <MainCom/>
     </>
   ) 
 }
