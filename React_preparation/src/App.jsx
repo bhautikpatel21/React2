@@ -14,6 +14,9 @@ import Ternary from './Day1/Conditional/Teanary'
 import FormMultipleFileds from './Day1/Form_MultipleFileds'
 import Index from './Day2'
 import MainCom from './Day2/MainCom'
+import UseRef from './Day3/UseRef'
+import UseRef2 from './Day3/UseRef2'
+import CallBack from './Day3/CallBack'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,7 +40,12 @@ function App() {
 
       {/* ||    ----  Day - 2  ----     || */}
       {/* <Index/> */}
-      <MainCom/>
+      {/* <MainCom/> */}
+
+      {/* ||    ----  Day -3  ----     || */}
+      {/* <UseRef/> */}
+      {/* <UseRef2/> */}
+      <CallBack/>
     </>
   ) 
 }
