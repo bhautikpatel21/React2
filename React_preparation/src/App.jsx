@@ -17,6 +17,7 @@ import MainCom from './Day2/MainCom'
 import UseRef from './Day3/UseRef'
 import UseRef2 from './Day3/UseRef2'
 import CallBack from './Day3/CallBack'
+import Redux_Container from './Day5/Component/Redux_Containar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -48,6 +49,10 @@ function App() {
       {/* <CallBack/> */}
 
       {/* ||    ----  Day - 4  ----     || */}
+      {/*  */}
+
+      {/* ||    ----  Day - 5  ----     || */}
+      {/* <Redux_Container/> */}
     </>
   ) 
 }
